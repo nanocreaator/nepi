@@ -1,0 +1,125 @@
+/* footer block */
+.footer {
+  background-color: rgb(27, 28, 29);
+  color: #444;
+  color: rgba(116, 119, 123, .5);
+}
+
+.partner_bar {
+  padding-top: 30px !important;
+  padding-bottom: 0px !important;
+}
+
+#subheader_face {
+  padding: 35px 0;
+  background: url("/assets/img/bck.png") repeat center top;
+}
+
+#subheader_inside {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: url("/assets/img/bck.png") repeat center top;
+}
+
+.menu_bar {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .menu_bar {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .menu_bar {
+    width: 880px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu_bar {
+    width: 1020px;
+  }
+}
+
+.menu_text {
+  font-size: 0.5em;
+  word-spacing: 9.0em;
+  color: #FFF;
+}
+
+/* brand ribbon block */
+.brands {
+  background: #2595FF;
+}
+.brands img {
+  margin: 0 10px 30px;
+}
+
+.top_title_inside {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  text-align: left;
+  color: #0066ff;
+  font-size: 2.0em;
+  letter-spacing: 0.11em;
+  /*word-spacing: 0.50em;*/
+  font-weight: 100;
+  text-transform: none;
+  font-style: bold;
+}
+
+hr.top_title_inside {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.title_inside {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #FFF;
+  font-size: 2.0em;
+  letter-spacing: 0.11em;
+  word-spacing: 0.30em;
+  font-weight: 100;
+  text-transform: none;
+}
+
+.title {
+  text-align: center;
+  color: #FFF;
+  font-size: 3.0em;
+  letter-spacing: 0.11em;
+  /*word-spacing: 0.50em;*/
+  font-weight: 100;
+  text-transform: none;
+  margin-top: 0.625em;
+  margin-bottom: 1.25em;
+}
+
+.icons_title {
+  text-align: center;
+  color: #FFF;
+  font-weight: 100;
+  text-transform: none;
+}
+
+.icon_title_inside {
+  margin-top: -.10em;
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  margin-top: 1.70em;
+  margin-bottom: 1.8em;
+  margin-left: 0.15em;
+  margin-right: 0.325em;
+  width: 190px;
+  height: 190px;
+}
