@@ -12,12 +12,12 @@ urlpatterns = [
     url(r'^overview/$', views.overview, name='overview'),
     #/source
     url(r'^source/$', views.source, name='source'),
-    #/get_started
-    url(r'^get_started/$', views.get_started, name='get_started'),
+    #/install
+    url(r'^install/$', views.install, name='install'),
     #/api
     url(r'^api/$', views.api, name='api'),
-    #/download
-    url(r'^download/$', views.download, name='download'),
+    #/faq
+    url(r'^faq/$', views.faq, name='faq'),
     #/contact
     url(r'^contact/$', views.contact, name='contact'),
     #/manual

@@ -19,21 +19,21 @@ def source(request):
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
-def get_started(request):
-    title = "get started"
-    body = markdownify("get_started")
+def install(request):
+    title = "install"
+    body = markdownify("install")
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
 def api(request):
-    title = "API"
+    title = "api & docs"
     body = markdownify("api")
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
-def download(request):
-    title = "download"
-    body = markdownify("download")
+def faq(request):
+    title = "f.a.q."
+    body = markdownify("faq")
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 

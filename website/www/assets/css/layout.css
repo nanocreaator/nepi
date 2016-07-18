@@ -274,7 +274,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #685d9f;
+  color: #0067ff;
   text-decoration: none;
 }
 a:hover,
@@ -513,7 +513,7 @@ mark,
   color: #aaaaaa;
 }
 .ew {
-  color: #685d9f;
+  color: #0067ff;
 }
 a.ew:hover,
 a.ew:focus {
@@ -549,7 +549,7 @@ a.fa:focus {
 }
 .fb {
   color: #fff;
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 a.fb:hover,
 a.fb:focus {
@@ -2282,7 +2282,7 @@ fieldset[disabled] .oq.active {
 }
 .ot {
   color: #ffffff;
-  background-color: #685d9f;
+  background-color: #0067ff;
   border-color: #5d548f;
 }
 .ot:focus,
@@ -2339,11 +2339,11 @@ fieldset[disabled] .ot:active,
 .ot.disabled.active,
 .ot[disabled].active,
 fieldset[disabled] .ot.active {
-  background-color: #685d9f;
+  background-color: #0067ff;
   border-color: #5d548f;
 }
 .ot .os {
-  color: #685d9f;
+  color: #0067ff;
   background-color: #ffffff;
 }
 .ou {
@@ -2611,7 +2611,7 @@ fieldset[disabled] .ox.active {
   background-color: #ffffff;
 }
 .oy {
-  color: #685d9f;
+  color: #0067ff;
   font-weight: normal;
   border-radius: 0;
 }
@@ -2771,7 +2771,7 @@ tbody.collapse.in {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3198,7 +3198,7 @@ select[multiple].nu > .on > .dl {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #685d9f;
+  border-color: #0067ff;
 }
 .nav .nav-divider {
   height: 1px;
@@ -3291,7 +3291,7 @@ select[multiple].nu > .on > .dl {
 .pr > li.active > a:hover,
 .pr > li.active > a:focus {
   color: #ffffff;
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .nav-stacked > li {
   float: none;
@@ -3913,7 +3913,7 @@ fieldset[disabled] .qh .oy:focus {
   padding: 6px 12px;
   line-height: 1.6;
   text-decoration: none;
-  color: #685d9f;
+  color: #0067ff;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -3946,8 +3946,8 @@ fieldset[disabled] .qh .oy:focus {
 .qj > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #685d9f;
-  border-color: #685d9f;
+  background-color: #0067ff;
+  border-color: #0067ff;
   cursor: default;
 }
 .qj > .disabled > span,
@@ -4064,7 +4064,7 @@ a.dg:focus {
   background-color: #919191;
 }
 .qp {
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .qp[href]:hover,
 .qp[href]:focus {
@@ -4132,7 +4132,7 @@ a.os:focus {
 }
 .qu.active > .os,
 .pr > .active > a > .os {
-  color: #685d9f;
+  color: #0067ff;
   background-color: #ffffff;
 }
 .qu > .os {
@@ -4203,7 +4203,7 @@ a.os:focus {
 a.dz:hover,
 a.dz:focus,
 a.dz.active {
-  border-color: #685d9f;
+  border-color: #0067ff;
 }
 .dz .qw {
   padding: 9px;
@@ -4316,7 +4316,7 @@ a.dz.active {
   line-height: 22px;
   color: #ffffff;
   text-align: center;
-  background-color: #685d9f;
+  background-color: #0067ff;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   transition: width 0.6s ease;
 }
@@ -4465,8 +4465,8 @@ button.qu {
 .qu.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #685d9f;
-  border-color: #685d9f;
+  background-color: #0067ff;
+  border-color: #0067ff;
 }
 .qu.active .rv,
 .qu.active:hover .rv,
@@ -4861,22 +4861,22 @@ button.sa.active:focus {
   border-bottom-color: #dddddd;
 }
 .sj {
-  border-color: #685d9f;
+  border-color: #0067ff;
 }
 .sj > .sd {
   color: #ffffff;
-  background-color: #685d9f;
-  border-color: #685d9f;
+  background-color: #0067ff;
+  border-color: #0067ff;
 }
 .sj > .sd + .sg > .sc {
-  border-top-color: #685d9f;
+  border-top-color: #0067ff;
 }
 .sj > .sd .os {
-  color: #685d9f;
+  color: #0067ff;
   background-color: #ffffff;
 }
 .sj > .sf + .sg > .sc {
-  border-bottom-color: #685d9f;
+  border-bottom-color: #0067ff;
 }
 .sk {
   border-color: #d6e9c6;
@@ -7590,7 +7590,7 @@ body {
 }
 .anr > li > a:hover,
 .anr > li > a:focus {
-  color: #685d9f;
+  color: #0067ff;
   background-color: transparent;
 }
 .anr > li + li {
@@ -7600,8 +7600,8 @@ body {
 .anr > li.active > a:hover,
 .anr > li.active > a:focus {
   font-weight: 700;
-  color: #685d9f;
-  border-bottom-color: #685d9f;
+  color: #0067ff;
+  border-bottom-color: #0067ff;
 }
 .anr.pq > li + li {
   margin-left: 0;
@@ -7619,7 +7619,7 @@ body {
 .anr.nav-stacked > li.active > a,
 .anr.nav-stacked > li.active > a:hover,
 .anr.nav-stacked > li.active > a:focus {
-  border-left-color: #685d9f;
+  border-left-color: #0067ff;
 }
 .anr.nav-stacked > li > a {
   display: block;
@@ -7967,8 +7967,8 @@ fieldset[disabled] .anx.active {
 }
 /* Checked state */
 .aoc input:checked ~ .aod {
-  background-color: #685d9f;
-  border-color: #685d9f;
+  background-color: #0067ff;
+  border-color: #0067ff;
   box-shadow: none;
 }
 /* Active */
@@ -8280,7 +8280,7 @@ fieldset[disabled] .al .aox.oq.active {
   margin-bottom: 20px;
   font-weight: 400;
   letter-spacing: 4px;
-  color: #685d9f;
+  color: #0067ff;
   text-transform: uppercase;
 }
 .eg.apd,
@@ -8467,7 +8467,7 @@ fieldset[disabled] .apr .oy:focus {
 }
 .dr .carousel-indicators .active {
   background-color: #fff;
-  border: 1px solid #685d9f;
+  border: 1px solid #0067ff;
 }
 .aps {
   position: relative;
@@ -8654,7 +8654,7 @@ img.zoom-img {
   margin-left: 2%;
 }
 .aqa {
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .aqb {
   background-color: #5cb85c;
@@ -8681,7 +8681,7 @@ img.zoom-img {
   opacity: .5;
 }
 .aqf > .active {
-  color: #685d9f;
+  color: #0067ff;
 }
 .aqf > .active .a {
   opacity: 1;
@@ -8700,7 +8700,7 @@ img.zoom-img {
   background-color: #dddddd;
 }
 .dq.sj {
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .dq.sk {
   background-color: #5cb85c;
@@ -8811,7 +8811,7 @@ img.zoom-img {
   border-top-color: rgba(255, 255, 255, 0.2);
 }
 .aql {
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .aqm {
   background-color: #5cb85c;
@@ -8894,7 +8894,7 @@ img.zoom-img {
 .aqv:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #685d9f;
+  background-color: #0067ff;
 }
 .aqw {
   left: auto;
