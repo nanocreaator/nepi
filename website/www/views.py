@@ -13,9 +13,9 @@ def overview(request):
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
-def source(request):
-    title = "source code"
-    body = markdownify("source")
+def platform(request):
+    title = "supported platforms"
+    body = markdownify("platform")
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
@@ -31,9 +31,9 @@ def api(request):
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
-def faq(request):
-    title = "f.a.q."
-    body = markdownify("faq")
+def tutorial(request):
+    title = "tutorials"
+    body = markdownify("tutorial")
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
@@ -43,7 +43,7 @@ def contact(request):
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
 
-def manual(request):
-    title = "manual"
-    body = markdownify("manual")
+def example(request):
+    title = "examples & use cases"
+    body = markdownify("example")
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})

@@ -32,13 +32,13 @@ a:hover {
 
 #subheader_face {
   padding: 35px 0;
-  background: url("/assets/img/bck.png") repeat center top;
+  background: url("/assets/img/bck.jpg") repeat center top;
 }
 
 #subheader_inside {
   padding-top: 12px;
   padding-bottom: 12px;
-  background: url("/assets/img/bck.png") repeat center top;
+  background: url("/assets/img/bck.jpg") repeat center top;
 }
 
 .menu_bar {

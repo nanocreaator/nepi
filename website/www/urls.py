@@ -10,16 +10,16 @@ urlpatterns = [
     url(r'^index/$', views.index,  name='index'),
     #/overview
     url(r'^overview/$', views.overview, name='overview'),
-    #/source
-    url(r'^source/$', views.source, name='source'),
+    #/platform
+    url(r'^platform/$', views.platform, name='platform'),
     #/install
     url(r'^install/$', views.install, name='install'),
     #/api
     url(r'^api/$', views.api, name='api'),
-    #/faq
-    url(r'^faq/$', views.faq, name='faq'),
+    #/tutorial
+    url(r'^tutorial/$', views.tutorial, name='tutorial'),
     #/contact
     url(r'^contact/$', views.contact, name='contact'),
-    #/manual
-    url(r'^manual/$', views.manual, name='manual'),
+    #/example
+    url(r'^example/$', views.example, name='example'),
 ]
