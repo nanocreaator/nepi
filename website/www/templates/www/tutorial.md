@@ -1,13 +1,9 @@
 
-#get started with NEPI
-
-- Step by step tutorial
-- Inspecting resources tutorial
-- The Collector: Archiving experiment results
-- The ExperimentRunner: Experiment replication
-- Automated topology generation tutorial
-- Plotting and serializing
+#Get Started With NEPI
+- [Step by Step Tutorial](/www/tutorials/step/)
+- Inspecting Resources Tutorial
+- The Collector: Archiving Experiment Results
+- The ExperimentRunner: Experiment Replication
+- Automated Topology Generation Tutorial
+- Plotting and Serializing
 - Extending NEPI
-
-#examples & use cases
-[A list of examples and use cases](/www/example)

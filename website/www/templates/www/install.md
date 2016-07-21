@@ -1,22 +1,19 @@
 
-#installing
+#Installing
 NEPI is now numbered version 6, and can run under either python2 or python3.
 
 The recommended method for installing NEPI is based on **pip**.
 This will take care of the **ipaddr** and **networkx** dependencies.
 
-```$ sudo pip install nepi
-```
+<pre><code class="bash">$ sudo pip install nepi</code></pre>
 
-#updating
+#Updating
 The recommended method for installing NEPI is based on **pip**.
 This will take care of the **ipaddr** and **networkx** dependencies.
 
-```$ sudo pip install nepi --upgrade
-```
+<pre><code class="bash">$ sudo pip install nepi --upgrade</code></pre>
 
-#alternative
-
+#Alternative
 As alternative, if you prefer you can download and install using:
 
 - [The source code](http://git.onelab.eu/?p=nepi.git;a=summary)

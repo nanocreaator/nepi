@@ -1,5 +1,5 @@
 
-#linux testbeds
+#Linux Testbeds
 If your testbed consists of Linux hosts then NEPI can work on it "out of the box", given the following reuquirements:
 
 - Users are given a SSH account with SSH key authentication
@@ -8,7 +8,7 @@ If your testbed consists of Linux hosts then NEPI can work on it "out of the box
 - Hosts have an IPv4 address
 - Hosts use Ubuntu/Debian or Fedora (other Linux distributions might work as well but are un tested)
 
-#planetlab
+#Planetlab
 Worldwide distributed network, composed of thousands of hosts interconnected through the Internet
 
 - Host are virtualized and resources are shared by multiple experiments (Many VMs per host)
@@ -17,7 +17,7 @@ Worldwide distributed network, composed of thousands of hosts interconnected thr
 - [PlanetLab Central](http://www.planet-lab.org)
 - [PlanetLab Europe](http://www.planet-lab.eu)
 
-#omf 6.0
+#OMF 6.0
 A Control and Management Framework for Networking Testbed Wireless LAN testbeds
 
 - Hosts are not virtualized and resources can not be shared by many users (Only one user per host at the same time)
@@ -26,7 +26,7 @@ A Control and Management Framework for Networking Testbed Wireless LAN testbeds
 - Many Wireless deployments open to researchers (NICTA, NITOS, w-Ilab.t,..)
 - [More info](http://omf.mytestbed.net)
 
-#ns-3 network simulator
+#NS-3 Network Simulator
 Discrete-event network simulator for Internet systems
 
 - Real-time mode
@@ -35,7 +35,7 @@ Discrete-event network simulator for Internet systems
 - Easy interconnection with the outside world thanks to a device abstraction layer
 - [More info](www.nsnam.org)
 
-#direct code execution
+#Direct Code Execution
 Application layer emulation using ns-3 network models
 
 - Execution of unmodified application binaries

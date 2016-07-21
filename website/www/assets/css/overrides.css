@@ -1,3 +1,14 @@
+/*.hljs {
+    color: #11e733;
+}*/
+
+img[alt="picformat"] {
+  max-width:  100%;
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+}
+
 ul {
   padding-left: 15px;
   list-style-type: none;
