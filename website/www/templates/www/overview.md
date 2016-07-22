@@ -24,4 +24,4 @@ It stands for: **Network Experiment Programming Interface**.
 NEPI was developed at **INRIA**, **Sophia Antipolis** France. A first prototype was implemented in 2010. Versions 1.0 and 2.0 were released in 2011 and 2012, respectively. The current version is 6.0, and it was completely redesigned and rewritten to broaden the scope, and to include several new features.
 
 #Is It Free?
-**Yes**, NEPI is free software. It is free to use, free to modify, free to share. NEPI v3.0 is licensed under GPL v2, so you can do whatever you want with it, as long as you keep the same license.
+**Yes**, NEPI is free software. It is free to use, free to modify, free to share. NEPI is licensed under GPL v2, so you can do whatever you want with it, as long as you keep the same license.

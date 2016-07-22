@@ -1,10 +1,10 @@
 
-#Introduction to NEPI: A step by step tutorial
+#Introduction to NEPI: A Step by Step Tutorial
 
 ###Requirements
 For this tutorial you will need a computer with Linux or Mac.
 
-###Installing the IPython console
+###Installing the IPython Console
 The IPython console can be used as an interactive interpreter to execute Python instructions. We can take advantage of this feature, to interactively run NEPI experiments. We will use the IPython console in this tutorial. You can easily install IPython on Debian, Ubuntu, Fedora or Mac as follows:
 
 #####**Debian/Ubuntu**
@@ -24,7 +24,7 @@ If an "pkg_resources.DistributionNotFound" error occurs you will also need to in
 
 <pre><code class="bash">$ sudo easy_install gnureadline</code></pre>
 
-###Starting the IPython console
+###Starting the IPython Console
 If NEPI is not installed in the system, you will need to add NEPI's path to the PYTHONPATH environment variable.
 
 <pre><code class="bash">$ export PYTHONPATH=$PYTHONPATH:<path-to-nepi-directory>/src</code></pre>
@@ -54,7 +54,7 @@ After importing the ExperimentController class, we need to instantiate a new Exp
 <pre><code class="python">ec = ExperimentController(exp_id="exp-id")
 </code></pre>
 
-###Designing an experiment
+###Designing an Experiment
 In order to design our experiment, we need to tell the EC which resources are going to be involved and how they will interact. Resources can be added to the EC using the register_resource invokation, and they can be associated to other resources with the register_connection invokation.
 
 We can start by defining a very simple experiment which consists on sending ICMP requests to a remote host from the local computer, using the Ping command. For this, we use two different NEPI resource abstractions, the linux::Node and the linux::Application. Adding these resources to the EC is very easy, just go ahead and copy & paste the instructions below in the IPython console:
@@ -71,7 +71,7 @@ Note that the application was "connected" to the node. This is equivalent to ins
 
 So far we have describe the experiment, so let's go ahead and tell NEPI to execute it.
 
-###Deploying an experiment
+###Deploying an Experiment
 Deploying an experiment is very easy, in fact the ExperimentController (EC) will do everything for you. You just need to gently tell it to the EC:
 
 <pre><code class="python">ec.deploy()
@@ -86,7 +86,7 @@ After some seconds, you should see output messages from NEPI informing about the
 2014-07-03 12:21:09,637 linux::Application INFO  guid 2 - host localhost - Starting command 'ping -c 3 nepi.inria.fr'
 </code></pre>
 
-###Monitoring the state of resources
+###Monitoring the State of Resources
 So far, so good. But now we might what to know what is going on with the experiment . For this NEPI provides the "state" primitive, which can be used to query the state of resources.
 
 <pre><code class="python">ec.state(node, hr=True)
@@ -103,7 +103,7 @@ In [10]: ec.state(node, hr=True)
 
 It is worth noticing that even if all resources in NEPI share a same life cycle and thus go through the same state changes (i.e. NEW, DISCOVERED, PROVISIONED, READY, STARTED, STOPPED and RELEASED), a same state might have a differente meaning depending on the type of the resource. In the example above, we see that the application is STARTED which means that it is 'running'. When the application finished running its state will pass to STOPPED. For a node, however, the state STARTED means the same thing as the state READY, this is that the node can be accessed by the user and is currently taking part in the experiment.
 
-###Retrieving experiment results
+###Retrieving Experiment Results
 One useful feature of NEPI is that it allows to retrieve results while the experiment is running. NEPI uses the concept of "traces", which are measurement points exposed by resources. Traces are associated to a name identifier (a type), different resource types will provide different traces. For instance, a linux::Application will natively provide "stdout" and a "stderr" traces, associated to the standard output and standard error pipes of the application Linux process. Traces can be retrieved using the "trace", after a resource has STARTED and before it is RELEASED.
 
 <pre><code class="python">ec.trace(app, "stdout")
@@ -116,7 +116,7 @@ In the experiment we previously ran, the "stdout" trace of the linux::Applicatio
 'PING nepi.pl.sophia.inria.fr (138.96.116.79) 56(84) bytes of data.\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_seq=1 ttl=63 time=3.38 ms\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_seq=2 ttl=63 time=1.99 ms\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_seq=3 ttl=63 time=2.77 ms\n\n--- nepi.pl.sophia.inria.fr ping statistics ---\n3 packets transmitted, 3 received, 0% packet loss, time 2002ms\nrtt min/avg/max/mdev = 1.993/2.718/3.384/0.572 ms\n'
 </code></pre>
 
-###Incremental experiment deployment
+###Incremental Experiment Deployment
 Another interesting feature of NEPI is that we can continue to register and deploy resources after the first invokation to "deploy". This means that we can incrementally describe and deploy our experiment as we go, which is very useful when we are first conceiving a new experiment. The incremental deployment allows us to test small parts of an experiment behavior, making it easier to detect when something goes wrong and debug it.
 
 To specify a specific group of resources to be deployed at one time, the deploy invokation can receive a list of Global Unique Identifiers (guids). The value returned by the register_resource invokation is in fact the "guid" of the resource just registered.
@@ -128,7 +128,7 @@ ec.register_connection(app2, node)
 ec.deploy(guids=[app2])
 </code></pre>
 
-###Using a remote Linux host
+###Using a Remote Linux Host
 The linux::Node resource has other attributes apart from the "hostname" that can be configured to use a remote host intead of the local host. In this case, a SSH account on the remote host is required. To login into a host using SSH we need three parameters: the hostname, the username and optionally the identity (which is the absolute path to the ssh private key) if the private key is not the default id_rsa key. With this three parameters we would log in as follow:
 
 <pre><code class="python">$ ssh -i identity username@hostname
@@ -146,7 +146,7 @@ ec.set(node, "cleanProcesses", True)
 
 Additional attributes such as "cleanHome" and "cleanProcesses" can be used to ensure that the node is clean before starting the experiment and thus experiment results will not be compromised.
 
-###Putting everything together
+###Putting Everything Together
 Lets now try to deploy an application on a remote host. For simplicity, we will first define two Python functions, one to add a node to the EC and another to add an application. Copy & paste the code below into your IPython console:
 
 <pre><code class="python">def add_node(ec, hostname, username, identity):
@@ -191,7 +191,7 @@ In [13]: ec.trace(rapp, "stdout")
 'PING nepi.pl.sophia.inria.fr (138.96.116.79) 56(84) bytes of data.\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_req=2 ttl=51 time=41.4 ms\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_req=3 ttl=51 time=41.3 ms\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_req=4 ttl=51 time=41.7 ms\n64 bytes from nepi.pl.sophia.inria.fr (138.96.116.79): icmp_req=5 ttl=51 time=41.3 ms\n\n--- nepi.pl.sophia.inria.fr ping statistics ---\n5 packets transmitted, 4 received, 20% packet loss, time 4005ms\nrtt min/avg/max/mdev = 41.300/41.438/41.725/0.302 ms\n'
 </code></pre>
 
-###Behind the scenes
+###Behind the Scenes
 When you use NEPI, most things happen in your machine, this machine is called the "controller". NEPI is a user-side application which is able to interpret instructions given by the experimenter and connect to a set of remote machines to deploy the experiment. However, in order to keep track of results and monitor running applications, NEPI will create and maintain an experiment directory structure in the remote (or local) hosts, when the linux::Node and the linux::Application resource abstractions are used.
 
 If you now open another terminal and login to the host you used on the previous experiment (as indicated below), you will see a directory named "~/.nepi".
@@ -210,7 +210,7 @@ Each time you run a same experiment, NEPI will add a new sub directory to the re
 <pre><code class="python">cat .nepi/nepi-exp/<exp-id>/app-2/<run-id>/stdout
 </code></pre>
 
-###Registering conditions to define workflows
+###Registering Conditions to Define Workflows
 Now that you have been introduced to the basics of NEPI, we can register two more applications and define a workflow between them. A workflow is used to define the order od . where one application will start after the other one has finished executing. For this we will use the EC register_condition method described below:
 
 <pre><code class="python">register_condition(self, guids1, action, guids2, state, time=None):
