@@ -27,7 +27,7 @@ If an "pkg_resources.DistributionNotFound" error occurs you will also need to in
 ###Starting the IPython Console
 If NEPI is not installed in the system, you will need to add NEPI's path to the PYTHONPATH environment variable.
 
-<pre><code class="bash">$ export PYTHONPATH=$PYTHONPATH:<path-to-nepi-directory>/src</code></pre>
+<pre><code class="bash">$ export PYTHONPATH=$PYTHONPATH:"path-to-nepi-directory"/src</code></pre>
 
 Then you can start IPython as follows:
 
@@ -49,7 +49,7 @@ The first thing we need to do in order to design a NEPI experiment is to import 
 <pre><code class="python">from nepi.execution.ec import ExperimentController
 </code></pre>
 
-After importing the ExperimentController class, we need to instantiate a new ExperimentController (EC) to hold the description of the experiment. The <exp-id> argument is the name you want to give to the experiment.
+After importing the ExperimentController class, we need to instantiate a new ExperimentController (EC) to hold the description of the experiment. The **exp-id** argument is the name you want to give to the experiment.
 
 <pre><code class="python">ec = ExperimentController(exp_id="exp-id")
 </code></pre>
@@ -207,7 +207,7 @@ Inside the nepi-exp directory, you will find a directory with the exp-id you ass
 
 Each time you run a same experiment, NEPI will add a new sub directory to the resource directory. This sub directory is named with the "run-id" of the EC, this is the creation timestamp of the EC. If you take a look at the "run-id" directoroty of the ping application resource, you will find a file with the ping "stdout".
 
-<pre><code class="python">cat .nepi/nepi-exp/<exp-id>/app-2/<run-id>/stdout
+<pre><code class="python">cat .nepi/nepi-exp/'exp-id'/app-2/'run-id'/stdout
 </code></pre>
 
 ###Registering Conditions to Define Workflows
