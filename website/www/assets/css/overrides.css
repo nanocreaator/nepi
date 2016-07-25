@@ -9,6 +9,20 @@ img[alt="picformat"] {
     margin-right: auto;
 }
 
+img[alt="minipicformat"] {
+  max-width:  30%;
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+img[alt="medpicformat"] {
+  max-width:  60%;
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+}
+
 ul {
   padding-left: 15px;
   list-style-type: none;
