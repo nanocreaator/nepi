@@ -9,7 +9,7 @@
 - [Extending NEPI](/www/tutorials/extend/)
 
 #Examples
-- Linux Examples
+- [Linux Examples](/www/examples/linux/)
 - PlanetLab Examples
 - OMF Examples
 - NS-3 Examples

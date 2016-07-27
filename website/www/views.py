@@ -49,7 +49,7 @@ def example(request, example=None):
         body = markdownify("example")
     else:
         title = "EXAMPLE"
-        body = markdownify("cases/{}".format(example))
+        body = markdownify("examples/{}".format(example))
 
     return render(request, 'layout/body_inside.html', {'content':body, 'title':title})
 
