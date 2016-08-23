@@ -10,11 +10,11 @@
 
 #Examples
 - [Linux Examples](/www/examples/linux/)
-- PlanetLab Examples
-- OMF Examples
-- NS-3 Examples
-- DCE Examples
-- Openflow Examples
+- [PlanetLab Examples](http://nepi.inria.fr/bin/view/Nepi/PlanetLabExperiments)
+- [OMF Examples](http://nepi.inria.fr/bin/view/Nepi/OmfExperiment)
+- [NS-3 Examples](http://nepi.inria.fr/bin/view/Nepi/ns3Experiments)
+- [DCE Examples](http://nepi.inria.fr/bin/view/Nepi/DceExperiments)
+- [Openflow Examples](http://nepi.inria.fr/bin/view/Nepi/OpenflowExperiments)
 
 #Cases
 - [VLC/CCN Streaming Experiment using PlanetLab and OMF 6](/www/cases/vlc/)
